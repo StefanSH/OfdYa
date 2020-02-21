@@ -1,4 +1,4 @@
-module github.com/antsupovsa/OfdYa
+module github.com/PharmaSpace/OfdYa
 
 go 1.13
 
