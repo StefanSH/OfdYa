@@ -1,4 +1,4 @@
-module github.com/antsupovsa/ofd-ya
+module github.com/antsupovsa/OfdYa
 
 go 1.13
 
