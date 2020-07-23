@@ -5,7 +5,6 @@ import (
 	"log"
 	"strconv"
 	"time"
-
 	"github.com/go-resty/resty/v2"
 )
 
@@ -22,6 +21,7 @@ type Receipt struct {
 	Link     string
 	Price    int
 	VatPrice int
+	KktRegId string
 }
 
 type Product struct {
@@ -195,6 +195,7 @@ func (ofd *ofdYa) getDocuments(kkt string, date time.Time) (documents []Receipt,
 			Link:     link,
 			Price:    document.TotalSum,
 			VatPrice: 0,
+			KktRegId: kkt,
 		})
 	}
 
